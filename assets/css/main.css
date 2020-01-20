@@ -326,7 +326,6 @@ body {
 }
 .text_scroll{
 	height:70%;
-	overflow-y: scroll;
 }
 .link_box{
 	position: absolute;
