@@ -313,6 +313,10 @@ body {
 	overflow: hidden
 }
 
+.terms-viewport {
+    height: 220vh !important;
+}
+
 .l-wrapper {
 	position: relative;
 	width: 1440px;
