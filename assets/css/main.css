@@ -328,9 +328,33 @@ body {
     text-align: center;
     padding-top: 25px;
 }
+
+.secound-page-title{
+	padding-top: 70px;
+}
 .text_scroll{
 	height:70%;
 }
+
+.link_box_2{
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.link_box_2 svg{
+	transition: all linear 0.3s;
+	transform: rotate(180deg);
+}
+
+.link_box_2 a:hover svg{
+	transform: rotate(180deg) translateX(7px);
+}
+
 .link_box{
 	position: absolute;
 	left: 50%;
