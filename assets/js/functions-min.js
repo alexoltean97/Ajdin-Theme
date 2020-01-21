@@ -1000,7 +1000,10 @@
             s = $(".side-nav").children().index(n),
             r = $(".side-nav").children().length - 1,
             o = 0;
-        "swipeup" === t.type || 40 === t.keyCode || t > 0 ? s !== r ? (o = s + 1, e(o), i(s, o, r)) : (e(o), i(s, o, r)) : ("swipedown" === t.type || 38 === t.keyCode || 0 > t) && (0 !== s ? (o = s - 1, e(o), i(s, o, r)) : (o = r, e(o), i(s, o, r)))
+        var breakWidth = window.innerWidth;
+        if(breakWidth >= 815) {
+            "swipeup" === t.type || 40 === t.keyCode || t > 0 ? s !== r ? (o = s + 1, e(o), i(s, o, r)) : (e(o), i(s, o, r)) : ("swipedown" === t.type || 38 === t.keyCode || 0 > t) && (0 !== s ? (o = s - 1, e(o), i(s, o, r)) : (o = r, e(o), i(s, o, r)))
+        }
     }
 
     function e(t) {
@@ -1055,12 +1058,8 @@
     }
     var o = !0,
         a = null;
-
-    var myWidth = window.innerWidth;
-
     $(this).on("mousewheel DOMMouseScroll", function(e) {
-
-        if (!$(".outer-nav").hasClass("is-vis") && myWidth >= 770 ) {
+        if (!$(".outer-nav").hasClass("is-vis")) {
             e.preventDefault();
             var i = e.originalEvent.wheelDelta ? -e.originalEvent.wheelDelta : 20 * e.originalEvent.detail;
             i > 50 && o ? (o = !1, clearTimeout(a), a = setTimeout(function() {
@@ -1069,11 +1068,7 @@
                 o = !0
             }, 800), t(-1))
         }
-
-
-    }),
-
-        $(".side-nav li, .outer-nav li").click(function() {
+    }), $(".side-nav li, .outer-nav li").click(function() {
         if (!$(this).hasClass("is-active")) {
             var t = $(this),
                 n = t.parent().find(".is-active"),
@@ -1091,15 +1086,11 @@
     });
     var l = document.getElementById("viewport"),
         c = new Hammer(l);
-    if(myWidth >= 770){
     c.get("swipe").set({
         direction: Hammer.DIRECTION_VERTICAL
-    }),
-        c.on("swipeup swipedown", function(e) {
+    }), c.on("swipeup swipedown", function(e) {
         t(e)
-    })};
-
-        $(document).keyup(function(e) {
+    }), $(document).keyup(function(e) {
         $(".outer-nav").hasClass("is-vis") || (e.preventDefault(), t(e))
     }), n(), s(), r()
 });

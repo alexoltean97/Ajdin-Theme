@@ -296,6 +296,7 @@ body {
 }
 
 body {
+	overflow: hidden;
 	background-color: #0c0c0c;
 	font-size: 14px;
 	line-height: 1.6;
@@ -308,7 +309,7 @@ body {
 .l-viewport {
 	position: relative;
 	width: 100%;
-	height: 110vh;
+	height: 115vh;
 	box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
 	overflow: hidden
 }
@@ -339,8 +340,12 @@ body {
 }
     .text_scroll p,
     .text_scroll p b{
-        font-size: 12px;
+        font-size: 12px!important;
     }
+
+	.link_box{
+		font-size:11px;
+	}
 }
 
 .text_scroll{
@@ -484,42 +489,6 @@ body {
 	font-weight: 700;
 	text-align: center
 }
-
-/*@media (max-width: 767px) and (min-width: 601px) and (max-height: 680px) {*/
-/*	.device-notification {*/
-/*		display: -webkit-box;*/
-/*		display: -webkit-flex;*/
-/*		display: -ms-flexbox;*/
-/*		display: flex*/
-/*	}*/
-/*}*/
-
-/*@media (max-width: 600px) and (min-width: 480px) and (max-height: 580px) {*/
-/*	.device-notification {*/
-/*		display: -webkit-box;*/
-/*		display: -webkit-flex;*/
-/*		display: -ms-flexbox;*/
-/*		display: flex*/
-/*	}*/
-/*}*/
-
-/*@media (max-width: 736px) and (min-width: 360px) and (orientation: landscape) {*/
-/*	.device-notification {*/
-/*		display: -webkit-box;*/
-/*		display: -webkit-flex;*/
-/*		display: -ms-flexbox;*/
-/*		display: flex*/
-/*	}*/
-/*}*/
-
-/*@media(max-width: 359px) {*/
-/*	.device-notification {*/
-/*		display: -webkit-box;*/
-/*		display: -webkit-flex;*/
-/*		display: -ms-flexbox;*/
-/*		display: flex*/
-/*	}*/
-/*}*/
 
 .section {
 	opacity: 0;
@@ -770,7 +739,6 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-/*	width: 900px;*/
 	max-width: 75%;
 	height: 100%;
 	-webkit-box-orient: vertical;
@@ -957,7 +925,7 @@ body {
 	}
 
 	.intro--banner h1 {
-		font-size: 55px
+		font-size: 35px
 	}
 
 	.intro--banner .intro-img {
@@ -979,9 +947,6 @@ body {
 		margin-top: 0
 	}
 
-	.intro--options {
-		display: none
-	}
 }
 
 .work {
@@ -990,9 +955,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-/*	width: 960px;*/
 	max-width: 75%;
-/*	height: 100%;*/
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -1059,7 +1022,6 @@ body {
 
 .work--lockup .slider--item-image {
 	width: 150px;
-	/*height:150px;*/
 	margin: 0 auto;
 	border-radius: 0%;
 	overflow: hidden
@@ -1151,12 +1113,10 @@ body {
 @media (max-width: 900px) {
 	.work--lockup .slider--item-image {
 		width: 120px;
-		/*height: 120px*/
 	}
 
 	.work--lockup .slider--item-center .slider--item-image {
 		width: 240px;
-		/*height: 240px*/
 	}
 
 	.work--lockup .slider--next,
@@ -1172,7 +1132,6 @@ body {
 
 	.work--lockup .slider--item-image {
 		width: 90px;
-		/*height: 90px*/
 	}
 
 	.work--lockup .slider--item-center .slider--item-image {
@@ -1187,6 +1146,7 @@ body {
 }
 
 @media (max-width: 600px) {
+
 	.work--lockup .slider {
 		width: auto
 	}
@@ -1209,9 +1169,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-/*	width: 900px;*/
 	max-width: 75%;
-/*	height: 100%;*/
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -1347,7 +1305,7 @@ body {
 	text-decoration: none;
 	color: #fff;
 	border: solid 2px #0C94FC;
-	background: #1A1A1A !important;
+	background: #282828 !important;
 	text-align: center;
 	border-radius: 10px;
 }
@@ -1356,18 +1314,6 @@ body {
     letter-spacing: 1px;
 	font-weight: 400;
 	text-transform: uppercase;
-}
-
-.price--options > a:nth-child(1) {
-	background-image: url("../img/about-winners.jpg")
-}
-
-.price--options > a:nth-child(2) {
-	background-image: url("../img/about-philosophy.jpg")
-}
-
-.price--options > a:nth-child(3) {
-	background-image: url("../img/about-history.jpg")
 }
 
 .price--options > a:hover h3 {
@@ -1383,12 +1329,6 @@ body {
 
 
 .about--options {
-/*
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-*/
 	max-width: 100%;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
@@ -1425,7 +1365,7 @@ body {
 	float: left;
 	margin-right: 15px;
 	margin-bottom: 15px;
-	background-color: transparent !important;
+	background-color: transparent;
 
 }
 
@@ -1439,6 +1379,76 @@ body {
 
 .about--options > div:nth-child(3) {
 	background-image: url("../img/about-history.jpg")
+}
+
+@media screen and (max-width: 679px) and (min-width:446px ) {
+	.about--options{
+		text-align: center;
+	}
+
+	.about--options > div{
+		display: inline-block;
+		float: none!important;
+	}
+
+	.about--options .last-div{
+		right: 100px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.intro{
+		margin-top: -350px;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.intro{
+		margin-top: -250px;
+	}
+}
+
+@media screen and (max-width: 679px){
+	.l-viewport{
+		height: 235vh;
+	}
+}
+
+	@media screen and (max-width: 444px) {
+
+	.price--options{
+		width: 100%;
+	}
+
+	.about--options{
+		text-align: center;
+	}
+
+	.about--options > div{
+		float:none;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width: 766px){
+	.link_box{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	body{
+		overflow-y:scroll;
+	}
+
+	.page-title{
+		padding-top: 75px;
+	}
+
+	.secound-page-title{
+		padding-top: 100px;
+	}
 }
 
 .about--options > div:hover h3 {
@@ -1522,11 +1532,6 @@ body {
 		display: none
 	}
 
-/*
-	.price--options {
-		display: none
-	}
-*/
 }
 
 .contact {
@@ -1534,7 +1539,6 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-/*	height: 100%;*/
 	background-image: url("../img/contact-visual.png");
 	background-position: center;
 	background-size: cover;
@@ -1547,7 +1551,6 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-/*	width: 900px;*/
 	max-width: 75%;
 	height: 100%;
 	-webkit-box-align: center;
@@ -1633,9 +1636,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-/*	width: 700px;*/
 	max-width: 75%;
-/*	height: 100%;*/
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
