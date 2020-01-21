@@ -330,9 +330,21 @@ body {
 }
 
 .secound-page-title{
-	padding-top: 70px;
+	padding-top: 100px;
 }
+
+@media screen and (max-width: 500px) {
+    .secound-page-title h1{
+    font-size: 1.5em;
+}
+    .text_scroll p,
+    .text_scroll p b{
+        font-size: 12px;
+    }
+}
+
 .text_scroll{
+    padding-bottom: 50px;
 	height:70%;
 }
 
