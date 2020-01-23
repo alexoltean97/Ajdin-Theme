@@ -372,6 +372,10 @@ body {
 	transform: rotate(180deg) translateX(7px);
 }
 
+.terms-link-box a{
+    padding-bottom: 100px;
+}
+
 .link_box{
 	position: absolute;
 	left: 50%;
@@ -388,6 +392,15 @@ body {
 .link_box a:hover svg{
 	transform: translateX(7px);
 }
+
+.l-section .text_scroll svg {
+    transition: all linear 0.3s;
+}
+
+.l-section .text_scroll a:hover svg {
+    transform: translateX(7px);
+}
+
 .l-side-nav {
 	position: absolute;
 	left: 0;
