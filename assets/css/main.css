@@ -933,6 +933,7 @@ body {
 }
 
 @media (max-width: 600px) {
+
 	.intro--banner {
 		height: 360px
 	}
@@ -1409,21 +1410,17 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px){
-	.intro{
-		margin-top: -350px;
-	}
-}
 
-@media screen and (max-width: 450px){
-	.intro{
-		margin-top: -250px;
-	}
-}
 
 @media screen and (max-width: 679px){
+
 	.l-viewport{
-		height: 235vh;
+		height: 300vh;
+	}
+
+	.intro{
+		height: auto;
+		margin-top: 200px;
 	}
 }
 
@@ -1764,6 +1761,7 @@ body {
 	display: block;
 	width: 200px;
 	margin-bottom: 30px;
+	margin-right: 20px;
 	line-height: 50px;
 	font-size: 16px;
 	font-weight: 700;
@@ -2098,4 +2096,53 @@ body {
 	color: #fff;
 	margin-top: 0;
 	margin-bottom: 10px;
+}
+
+
+/* Contact CSS */
+
+.row{
+	 width: 100%;
+ }
+
+.row .column-right-content{
+	width: 25%;
+	float: right;
+}
+
+.row .column-left-content {
+	width: 70%;
+	float:left;
+}
+
+
+.row .column-left-content input[type="submit"]{
+	width: 100%;
+	max-width: 100%;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #0497FD;
+	border: none;
+	border-radius: 0;
+}
+
+@media screen and (max-width: 794px) {
+	.row .column-right-content{
+		width: 100%;
+		float: none;
+	}
+
+	.row .column-left-content {
+		width: 100%;
+		float:none;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.row .column-right-content{
+		text-align: center;
+	}
 }
