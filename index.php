@@ -1,38 +1,3 @@
-<?php
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-
-    if(isset($_POST['Inner_Tennis_App'])) {
-        $inner_tennis = $_POST['Inner_Tennis_App'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $inner_tennis;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
-    }
-
-    if(isset($_POST['Mental_Coaching'])) {
-        $mental_coaching = $_POST['Mental_Coaching'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $mental_coaching;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
-    }
-
-    if(isset($_POST['Other'])) {
-        $other = $_POST['Other'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $other;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
-    }
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -286,7 +251,7 @@ if(isset($_POST['submit'])){
                                </div> <!-- End .column-left-content -->
 
                                <div class="column-left-content">
-                                   <form action="index.php" method="post">
+                                   <form action="thank-you.php" method="post">
                                        <div class="work-request--options">
                                               <span class="options-a">
                                                 <input id="opt-1" type="checkbox" name="Inner_Tennis_App" value="Inner Tennis App">
