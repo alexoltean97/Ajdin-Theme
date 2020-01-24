@@ -25,13 +25,13 @@
 
             <div class="l-wrapper">
                 <header class="header">
-                    <a class="header--logo" href="index.html">
+                    <a class="header--logo" href="index.php">
                         <img src="assets/img/logo.png"  width="28" alt="Global">
                         <p>Inner Tennis</p>
                     </a>
 
                     <div class="link_box_2">
-                        <a href="index.html" style="color: #fff; text-decoration: none;">
+                        <a href="index.php" style="color: #fff; text-decoration: none;">
                         <span>
                     <svg class="back-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -89,7 +89,7 @@
                                 <p>These Terms and Conditions may be revised at any time we see fit, and you are expected to review such terms on a regular basis to ensure your understanding of all terms and conditions governing use of the Service. We will revise the updated date at the top of this page. By using our Service you are acknowledging your responsibility to do so.</p>
 
                                 <div class="link_box terms-link-box">
-                                    <a href="about-page.html" style="color: #fff; text-decoration: none;">About
+                                    <a href="about-page.php" style="color: #fff; text-decoration: none;">About
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -99,7 +99,7 @@
                   </span>
                                     </a> &nbsp; &nbsp;
 
-                                    <a href="privacy-policy.html" style="color: #fff; text-decoration: none;">Privacy Policy &nbsp;
+                                    <a href="privacy-policy.php" style="color: #fff; text-decoration: none;">Privacy Policy &nbsp;
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">

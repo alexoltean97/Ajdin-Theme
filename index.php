@@ -1,3 +1,38 @@
+<?php
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    if(isset($_POST['Inner_Tennis_App'])) {
+        $inner_tennis = $_POST['Inner_Tennis_App'];
+        $to = "contact@top-tennis.net";
+        $subject = "Inner Tennis Request";
+        $content = $inner_tennis;
+        $headers = "From: " . $email;
+        mail($to,$subject,$content,$headers);
+    }
+
+    if(isset($_POST['Mental_Coaching'])) {
+        $mental_coaching = $_POST['Mental_Coaching'];
+        $to = "contact@top-tennis.net";
+        $subject = "Inner Tennis Request";
+        $content = $mental_coaching;
+        $headers = "From: " . $email;
+        mail($to,$subject,$content,$headers);
+    }
+
+    if(isset($_POST['Other'])) {
+        $other = $_POST['Other'];
+        $to = "contact@top-tennis.net";
+        $subject = "Inner Tennis Request";
+        $content = $other;
+        $headers = "From: " . $email;
+        mail($to,$subject,$content,$headers);
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -197,7 +232,7 @@
                                     From recreational to professional level, as tennis players, we all deal with the same mental challenges. We want to play our best tennis, consistently.
                                     We want to remain calm under pressure. We want to will ourselves into flow. We want to be the player that always wins those tough and close matches...
 
-                                    <a href="about-page.html" style="color: #fff; text-decoration: none;">Read More
+                                    <a href="about-page.php" style="color: #fff; text-decoration: none;">Read More
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -210,7 +245,7 @@
                                 </p>
 
                                 <div class="link_box">
-                                    <a href="privacy-policy.html" style="color: #fff; text-decoration: none;">Privacy policy &nbsp;
+                                    <a href="privacy-policy.php" style="color: #fff; text-decoration: none;">Privacy policy &nbsp;
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -220,7 +255,7 @@
                   </span>
                                     </a> &nbsp; &nbsp;
 
-                                    <a href="terms-conditions.html" style="color: #fff; text-decoration: none;">Terms and codition  &nbsp;
+                                    <a href="terms-conditions.php" style="color: #fff; text-decoration: none;">Terms and codition  &nbsp;
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #fff;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -251,10 +286,10 @@
                                </div> <!-- End .column-left-content -->
 
                                <div class="column-left-content">
-                                   <form>
+                                   <form action="index.php" method="post">
                                        <div class="work-request--options">
                                               <span class="options-a">
-                                                <input id="opt-1" type="checkbox" value="app design">
+                                                <input id="opt-1" type="checkbox" name="Inner_Tennis_App" value="Inner Tennis App">
                                                 <label for="opt-1">
                                                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -264,7 +299,7 @@
                                                   </svg>
                                                   Inner Tennis app
                                                 </label>
-                                                <input id="opt-2" type="checkbox" value="graphic design">
+                                                <input id="opt-2" type="checkbox" name="Mental_Coaching" value="Mental Coaching">
                                                 <label for="opt-2">
                                                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -274,7 +309,7 @@
                                                   </svg>
                                                   Mental Coaching
                                                 </label>
-                                                <input id="opt-3" type="checkbox" value="motion design">
+                                                <input id="opt-3" type="checkbox" name="Other" value="Other">
                                                 <label for="opt-3">
                                                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
@@ -289,15 +324,15 @@
 
                                        <div class="work-request--information">
                                            <div class="information-name">
-                                               <input id="name" type="text" spellcheck="false">
+                                               <input id="name" name="name" type="text" spellcheck="false">
                                                <label for="name">Name</label>
                                            </div>
                                            <div class="information-email">
-                                               <input id="email" type="email" spellcheck="false">
+                                               <input id="email" type="email" name="email" spellcheck="false">
                                                <label for="email">Email</label>
                                            </div>
                                        </div>
-                                       <input type="submit" value="Send Request">
+                                       <input type="submit" name="submit" value="Send Request">
                                    </form>
                                </div>
 
