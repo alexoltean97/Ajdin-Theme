@@ -198,7 +198,7 @@
                                     From recreational to professional level, as tennis players, we all deal with the same mental challenges. We want to play our best tennis, consistently.
                                     We want to remain calm under pressure. We want to will ourselves into flow. We want to be the player that always wins those tough and close matches...
 
-                                    <a href="about-page.php" style="color: #0a95fd; text-decoration: none;">Read More
+                                    <a href="about-page.php" style="color: #0a95fd; text-decoration: none; font-weight: bold;">Read More
                                         <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style=" width: 15px; fill: #0a95fd;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
