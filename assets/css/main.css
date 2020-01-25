@@ -1369,7 +1369,6 @@ body {
 	height: 135px;
 	text-decoration: none;
 	color: #fff;
-	border: 10px solid #0f33ff;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1377,22 +1376,13 @@ body {
     padding-right: 10px;
 	box-sizing: border-box;
 	float: left;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-right: 25px;
+	margin-bottom: 45px;
 	background-color: transparent;
-
 }
 
-.about--options > div:nth-child(1) {
-	background-image: url("../img/about-winners.jpg")
-}
-
-.about--options > div:nth-child(2) {
-	background-image: url("../img/about-philosophy.jpg")
-}
-
-.about--options > div:nth-child(3) {
-	background-image: url("../img/about-history.jpg")
+.about--options > div img{
+	border:10px solid #0f33ff;
 }
 
 @media screen and (max-width: 679px) and (min-width:446px ) {

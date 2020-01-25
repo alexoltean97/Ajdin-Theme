@@ -161,24 +161,25 @@
 
                             </div>
                             <div class="about--options">
-                                <div style="background-image: url('assets/img/bg-2.png'); background-size:100px;">
-                                    <h4>Preparation is half the work</h4>
+                                <div>
+                                    <img src="assets/img/screenshoot-1.png" alt="chapter-1"/>
                                     <h3>Chapter 1</h3>
                                 </div>
-                                <div style="background-image: url('assets/img/bg-1.png')">
-                                    <h4>The joy is in the playing</h4>
+
+                                <div>
+                                    <img src="assets/img/screenshoot-2.png" alt="chapter-2"/>
                                     <h3>Chapter 2</h3>
                                 </div>
-                                <div style="background-image: url('assets/img/bg-3.png')">
-                                    <h4>Self-reflection, the key skill</h4>
+                                <div>
+                                    <img src="assets/img/screenshot-3.png" alt="chapter-3"/>
                                     <h3>Chapter 3</h3>
                                 </div>
-                                <div style="background-image: url('assets/img/bg-4.png')">
-                                    <h4>Self-reflection, the key skill</h4>
+                                <div>
+                                    <img src="assets/img/screenshot-4.png" alt="chapter-4"/>
                                     <h3>Chapter 4</h3>
                                 </div>
-                                <div style="background-image: url('assets/img/bg-5.png'); background-size: 70px;" class="last-div">
-                                    <h4>The summit comes gently</h4>
+                                <div>
+                                    <img src="assets/img/screenshot-5.png" alt="chapter-1"/>
                                     <h3>Chapter 5</h3>
                                 </div>
                             </div>
