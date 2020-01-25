@@ -1084,13 +1084,11 @@
             r = s;
         e(s), i(n, r, s)
     });
-    var l = document.getElementById("viewport"),
-        c = new Hammer(l);
-    c.get("swipe").set({
-        direction: Hammer.DIRECTION_VERTICAL
-    }), c.on("swipeup swipedown", function(e) {
-        t(e)
-    }), $(document).keyup(function(e) {
-        $(".outer-nav").hasClass("is-vis") || (e.preventDefault(), t(e))
-    }), n(), s(), r()
+
+        var l = document.getElementById("viewport"),
+            c = new Hammer(l);
+             $(document).keyup(function (e) {
+            $(".outer-nav").hasClass("is-vis") || (e.preventDefault(), t(e))
+        }), n(), s(), r()
+
 });
