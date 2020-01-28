@@ -1,33 +1,52 @@
+<?php require 'mailer/PHPMailerAutoload.php'; ?>
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['submit']) && array_key_exists('name', $_POST) && array_key_exists('email', $_POST)){
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $to = "contact@top-tennis.net";
+    $subject = "Inner Tennis Request";
+    $headers = "From: " . strip_tags($email) . "\r\n";
+    $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    if(isset($_POST['Inner_Tennis_App'])) {
-        $inner_tennis = $_POST['Inner_Tennis_App'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $inner_tennis;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
+    $content = 'Subject: ' . $subject . '<br/>';
+    $content .= 'Name: ' . $name . '<br/>';
+    $content .= 'Email: ' . $email . '<br/>';
+
+    if(array_key_exists('Inner_Tennis_App', $_POST)) {
+        $content .= $_POST['Inner_Tennis_App'] . '<br/>';
     }
 
-    if(isset($_POST['Mental_Coaching'])) {
-        $mental_coaching = $_POST['Mental_Coaching'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $mental_coaching;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
+    if(array_key_exists('Mental_Coaching', $_POST)) {
+        $content .= $_POST['Mental_Coaching'] . '<br/>';
     }
 
-    if(isset($_POST['Other'])) {
-        $other = $_POST['Other'];
-        $to = "contact@top-tennis.net";
-        $subject = "Inner Tennis Request";
-        $content = $other;
-        $headers = "From: " . $email;
-        mail($to,$subject,$content,$headers);
+    if(array_key_exists('Other', $_POST)) {
+        $content .= $_POST['Other'] . '<br/>';
+    }
+
+    // mail($to,$subject,$content,$headers);
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'secureams34.sgcpanel.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'contact@top-tennis.net';
+    $mail->Password = '';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
+
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->setFrom('contact@top-tennis.net', 'Mailer');
+    $mail->addAddress('vlad@digitalgarage.ro');
+    $mail->Body = $content;
+
+    if(!$mail->send()) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Message has been sent';
     }
 }
 
