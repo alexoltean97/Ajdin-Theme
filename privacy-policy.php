@@ -75,7 +75,7 @@
                     </g>
                     </svg>
                   </span>
-                                    </a> &nbsp; &nbsp;
+                                    </a> &nbsp; &nbsp;<br>
 
                                     <a href="terms-conditions.php" style="color: #fff; text-decoration: none;">Terms and codition  &nbsp;
                                         <span>

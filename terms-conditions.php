@@ -49,7 +49,7 @@
                     <li id="terms" class="l-section section privacy section--is-active">
                         <div class="hire">
                             <div class="page-title secound-page-title">
-                                <h1>Terms and coditions</h1>
+                                <h1>TERMS AND CONDITIONS</h1>
                             </div>
                             <div class="text_scroll">
                                 <p>Last Updated: January 12, 2020</p>
@@ -97,7 +97,7 @@
                     </g>
                     </svg>
                   </span>
-                                    </a> &nbsp; &nbsp;
+                                    </a> &nbsp; &nbsp;<br>
 
                                     <a href="privacy-policy.php" style="color: #fff; text-decoration: none;">Privacy Policy &nbsp;
                                         <span>

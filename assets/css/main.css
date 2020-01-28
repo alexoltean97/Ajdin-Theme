@@ -1363,7 +1363,7 @@ body {
 }
 .about--options > div {
 	position: relative;
-	width: 189px;
+	width: 209px;
 	height: 135px;
 	text-decoration: none;
 	color: #fff;
@@ -1372,11 +1372,11 @@ body {
 	background-repeat: no-repeat;
 	padding-left: 10px;
     padding-right: 10px;
-	box-sizing: border-box;
 	float: left;
 	margin-right: 25px;
 	margin-bottom: 45px;
 	background-color: transparent;
+    border:10px solid #0C94FC;
 }
 
 .about--options > div img{
@@ -1402,9 +1402,6 @@ body {
 
 @media screen and (max-width: 679px){
 
-	.l-viewport{
-		height: 300vh;
-	}
 
 	.intro{
 		height: auto;
@@ -1724,7 +1721,6 @@ body {
 
 .work-request--options .options-a {
 	display: block;
-	width: 100%;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
@@ -2132,21 +2128,3 @@ body {
 	}
 }
 
-/*@media screen and (max-width: 794px) {*/
-/*	.row .column-right-content{*/
-/*		width: 100%;*/
-/*		float: none;*/
-/*	}*/
-
-/*	.row .column-left-content {*/
-/*		width: 100%;*/
-/*		float:none;*/
-/*	}*/
-
-/*}*/
-
-/*@media screen and (max-width: 768px){*/
-/*	.row .column-right-content{*/
-/*		text-align: center;*/
-/*	}*/
-/*}*/

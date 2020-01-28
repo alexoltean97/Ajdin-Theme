@@ -13,15 +13,6 @@
 </head>
 <body id="window-size">
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-    <a class="device-notification--logo" href="#0">
-        <img src="assets/img/logo.png" width="28" alt="Global">
-        <p>Global</p>
-    </a>
-    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
-
 <div class="perspective effect-rotate-left">
     <div class="container"><div class="outer-nav--return"></div>
         <div id="viewport" class="l-viewport">
@@ -31,11 +22,12 @@
                         <img src="assets/img/logo.png"  width="28" alt="Global">
                         <p>Inner Tennis</p>
                     </a>
-                    <!--          <button class="header--cta cta">Hire Us</button>-->
+
                     <div class="header--nav-toggle">
                         <span></span>
                     </div>
                 </header>
+
                 <nav class="l-side-nav">
                     <ul class="side-nav">
                         <li class="is-active"><span>Home</span></li>
@@ -45,6 +37,7 @@
                         <li><span>Contact</span></li>
                     </ul>
                 </nav>
+
                 <ul class="l-main-content main-content">
                     <li class="l-section section section--is-active">
                         <div class="intro">
@@ -161,25 +154,24 @@
 
                             </div>
                             <div class="about--options">
-                                <div>
-                                    <img src="assets/img/screenshoot-1.png" alt="chapter-1"/>
+                                <div style="background-image: url('assets/img/bg-2.png'); background-size:200px; background-position-y: 0px;">
+                                    <h4>Preparation is half the work</h4>
                                     <h3>Chapter 1</h3>
                                 </div>
-
-                                <div>
-                                    <img src="assets/img/screenshoot-2.png" alt="chapter-2"/>
+                                <div style="background-image: url('assets/img/bg-1.png');background-size: 260px; background-position-y: -50px;">
+                                    <h4>The joy is in the playing</h4>
                                     <h3>Chapter 2</h3>
                                 </div>
-                                <div>
-                                    <img src="assets/img/screenshot-3.png" alt="chapter-3"/>
+                                <div style="background-image: url('assets/img/bg-3.png'); background-size: 330px; background-position-y: -50px; background-position-x: -150px;">
+                                    <h4>Self-reflection, the key skill</h4>
                                     <h3>Chapter 3</h3>
                                 </div>
-                                <div>
-                                    <img src="assets/img/screenshot-4.png" alt="chapter-4"/>
+                                <div style="background-image: url('assets/img/bg-4.png'); background-size: 200px; background-position-x: -0px;">
+                                    <h4>Self-reflection, the key skill</h4>
                                     <h3>Chapter 4</h3>
                                 </div>
-                                <div>
-                                    <img src="assets/img/screenshot-5.png" alt="chapter-1"/>
+                                <div style="background-image: url('assets/img/bg-5.png'); background-size: 170px; background-position-y: -40px;" class="last-div">
+                                    <h4>The summit comes gently</h4>
                                     <h3>Chapter 5</h3>
                                 </div>
                             </div>
@@ -219,7 +211,7 @@
                     </g>
                     </svg>
                   </span>
-                                    </a> &nbsp; &nbsp;
+                                    </a> &nbsp; &nbsp;</br>
 
                                     <a href="terms-conditions.php" style="color: #fff; text-decoration: none;">Terms and codition  &nbsp;
                                         <span>
@@ -247,7 +239,7 @@
 
                                <div class="column-left-content">
                                    <p>Ajdin Kolonic<br>Johannes Worpstraat 23-3<br>1076BD Amsterdam<br>The Netherlands</p>
-                                   <a href="mailto:ouremail@gmail.com" style="color:#fff;">contact@top-tennis.net</a>
+                                   <a href="mailto:ouremail@gmail.com" style="color:#fff;">contact@top-tennis.net</a></br>
                                    <a href="tel:+31650819599" style="color:#fff;">+31650819599</a>
                                </div>
 
